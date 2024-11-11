@@ -14,7 +14,6 @@ void main() {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                // Анонімна функція для контейнера
                 Consumer<ContainerConfig>(
                   builder: (context, config, child) {
                     return Container(
@@ -31,7 +30,7 @@ void main() {
                 ),
                 const SizedBox(height: 20),
 
-                // Анонімна функція для слайдера ширини
+                
                 Consumer<ContainerConfig>(
                   builder: (context, config, child) {
                     return Column(
@@ -48,7 +47,7 @@ void main() {
                   },
                 ),
 
-                // Анонімна функція для слайдера висоти
+               
                 Consumer<ContainerConfig>(
                   builder: (context, config, child) {
                     return Column(
@@ -65,7 +64,7 @@ void main() {
                   },
                 ),
 
-                // Анонімна функція для слайдера радіуса верхнього правого кута
+                
                 Consumer<ContainerConfig>(
                   builder: (context, config, child) {
                     return Column(
